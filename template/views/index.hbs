@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <title>Home Page</title>
+</head>
+<body>
+    {{!-- <h1>Header  from Home hbs Page</h1> --}}
+   
+
+{{!-- card --}}
+    {{>header}}
+    <div class="row">
+  <div class="col-sm-6">
+    
+    
+    <div class="card">
+      
+      <div class="card-body">
+        {{!-- <img  class="col-sm-6" src={{image}} alt="this is photo"> --}}
+    
+        <h5 class="card-title">{{title1}}</h5>
+        <p class="card-text">{{desc}}</p>
+        <a href={{detail}} class="btn btn-primary">more Details</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+    {{>footer}}
+
+
+    <script src="js/new.js"></script>
+</body>
+</html>
